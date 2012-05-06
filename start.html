@@ -1,0 +1,28 @@
+<html>
+
+<body>
+<form name="input" action="dataflow.lisp" method="get">
+<input type="hidden" name="state" value="0">
+<textarea rows="10" cols="30" name="program">
+k = 2;
+if (...) {
+  a = k + 2;
+  x = 5;
+ } else {
+  a = k * 2;
+  x = 8;
+}
+k = a;
+while (...) {
+  b = 2;
+  x = a + k;
+  y = a * b;
+  k = k + 1;
+}
+print(a+x);
+</textarea>
+<input type="submit" value="Submit" />
+</form>
+
+</body>
+</html>

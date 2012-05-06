@@ -1,0 +1,3 @@
+graph {
+node [shape=record];
+1000[label="{if (...) |a = k + 2;|x = 5;|a = k * 2;|x = 8;|k = a;|while (...) |b = 2;|x = a + k;|y = a * b;|k = k + 1;|print(a+x);|exit|}"];}
